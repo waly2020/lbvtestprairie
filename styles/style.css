@@ -69,6 +69,7 @@ header::before{
 /*fin burger*/
 .menu{
     position: relative;
+    width: 100%;
     height: 72px;
     display: flex;
     justify-content: space-between;
@@ -121,6 +122,7 @@ header::before{
 #competences{
     color: #fff;
     font-size: 2.5em;
+    height: 2.5em;
 }
 main{
     display: flex;
@@ -179,20 +181,24 @@ main > *{
     position: absolute;
     width: 0;
     height: 100%;
-    background-color: #0078ff;
-    transition: 0.8s;
+    background-color: red;
+    transition: 1.5s ease-in;
 }
 .barre_anime_css.active{
     width: 75%;
+    background-color: #0078ff;
 }
 .barre_anime_html.active{
     width: 85%;
+    background-color: #0078ff;
 }
 .barre_anime_php.active{
     width: 50%;
+    background-color: #0078ff;
 }
 .barre_anime_js.active{
     width: 90%;
+    background-color: #0078ff;
 }
 .titre_ebaout{
     position: relative;
