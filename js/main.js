@@ -23,7 +23,7 @@ function textAnim(){
         }
         index += 1;
         textAnim();
-    },600);
+    },(500));
 }
 setTimeout(()=>{
     textAnim();
@@ -41,5 +41,10 @@ window.addEventListener("scroll",e =>{
                 jg.classList.add("active");
             }
         }
+    }else{
+        for(let i = 0; i < jauges.length; i++){
+            let jg = jauges[i];
+             jg.classList.remove("active");
+        }
     }
-})
+});
